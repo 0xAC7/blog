@@ -1,0 +1,15 @@
+{
+  "name": "blog",
+  "version": "0.0.1",
+  "description": "我的涂鸦板",
+  "repository": "https://github.com/0xAC7/blog.git",
+  "author": "0xAC7 <ewangteng@126.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^0.14.8"
+  }
+}
