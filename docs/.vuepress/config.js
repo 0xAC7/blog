@@ -1,51 +1,26 @@
 module.exports = {
-    title: '涂鸦板',
-    description: '记录生活感悟和技术心得',
+    title: '0xAC7 的技术博客',
+    description: '学习是一个历险的过程',
+    port: '8090',
+    head: [
+        ['link', {rel: 'icon', href: '/logo.png'}]
+    ],
+    markdown: {
+        lineNumbers: true
+    },
     themeConfig: {
-        nav: [{
-                text: '首页',
-                link: '/'
-            },
-            {
-                text: 'JavaScript',
-                link: '/javascript/'
-            },
-            {
-                text: 'Java',
-                items: [{
-                        text: 'Spring',
-                        link: '/java/spring/'
-                    },
-                    {
-                        text: 'Mybatis',
-                        link: '/java/mybatis/'
-                    }
-                ]
-            },
-            {
-                text: '关于我',
-                link: '/about/'
-            },
-            {
-                text: 'Github',
-                link: '#'
+        nav: require('./nav'),
+        sidebar: require('./sidebar'),
+        sidebarDepth: 2,
+        lastUpdated: 'Last Updated',
+        searchMaxSuggestoins: 10,
+        serviceWorker: {
+            updatePopup: {
+                message: "New content is available.",
+                buttonText: 'Refresh'
             }
-        ],
-        sidebar: {
-            '/javascript/': [
-                '',
-                'function',
-                'object'
-            ],
-            '/java/spring/': [
-                ''
-            ],
-            '/java/mybatis/': [
-                ''
-            ],
-            '/about/': [
-                ''
-            ]
-        }
+        },
+        editLinks: true,
+        editLinkText: '在 GitHub 上编辑此页 ！'
     }
 }

@@ -1,15 +1,30 @@
 {
   "name": "blog",
-  "version": "0.0.1",
-  "description": "我的涂鸦板",
-  "repository": "https://github.com/0xAC7/blog.git",
-  "author": "0xAC7 <ewangteng@126.com>",
-  "license": "MIT",
+  "version": "1.0.0",
+  "description": "0xAC's Private Blog",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
   },
+  "resolutions": {
+    "webpack-dev-middleware": "3.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xAC7/blog.git"
+  },
+  "author": "0xAC7",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0xAC7/blog/issues"
+  },
+  "homepage": "https://github.com/0xAC7/blog#readme",
   "devDependencies": {
-    "vuepress": "^0.14.8"
+    "vuepress": "^0.14.10"
   }
 }
